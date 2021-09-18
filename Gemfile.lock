@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/anjlab/bootstrap-rails.git
+  revision: 54b165183fdccc4feb451416d1a46ecae496d6be
+  specs:
+    anjlab-bootstrap-rails (3.0.3.0)
+      railties (>= 3.0)
+      sass (>= 3.2)
+
+GIT
   remote: git://github.com/manfe/refile.git
   revision: 46b4178654e60bb5846b1423acf6d0740cdecc25
   specs:
@@ -141,6 +149,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rb-readline (0.4.2)
     refile-mini_magick (0.2.0)
       mini_magick (~> 4.0)
       refile (~> 0.5)
@@ -204,13 +213,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  anjlab-bootstrap-rails!
   byebug
   coffee-rails (~> 4.2)
+  execjs
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.2.4)
+  rb-readline (~> 0.4.2)
   refile!
   refile-mini_magick
   sass-rails (~> 5.0)

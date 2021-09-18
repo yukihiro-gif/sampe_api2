@@ -6,7 +6,12 @@ class ImagesController < ApplicationController
     
      redirect_to homes_path
    end
- 
+
+   
+   def index
+   end
+
+
  private
   def params_image
     params.require(:image).permit(:image1)

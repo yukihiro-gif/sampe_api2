@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_02_051352) do
+ActiveRecord::Schema.define(version: 2021_09_05_154428) do
 
   create_table "homes", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(version: 2021_08_02_051352) do
 
   create_table "images", force: :cascade do |t|
     t.string "image1_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "novels", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
